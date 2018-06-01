@@ -1,0 +1,9 @@
+{
+  "name": "js-2b7hv1",
+  "description": "",
+  "homepage": "https://stackblitz.com/edit/js-2b7hv1",
+  "dependencies": {
+    "lit-html": "0.10.0"
+  },
+  "version": "1.0.0"
+}
