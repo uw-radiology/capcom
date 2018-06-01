@@ -25,8 +25,10 @@ function api_query (url, accept){
       },
       method: 'GET'
     })
+
 }
 
 export {
   getImage
 }
+
