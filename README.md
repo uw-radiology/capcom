@@ -1,2 +1,2 @@
 # capcom
-Captcha with DICOM images!
+#SIIMHacks 2018 Hackathon Project - Captcha with DICOM images!
