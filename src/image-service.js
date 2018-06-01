@@ -8,6 +8,7 @@ const getStudies = async () => {
       method: 'GET'
     })
     return await result.json();
+
 }
 
 export {
