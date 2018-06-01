@@ -1,9 +1,19 @@
 {
-  "name": "js-2b7hv1",
+  "name": "capcom",
   "description": "",
-  "homepage": "https://stackblitz.com/edit/js-2b7hv1",
   "dependencies": {
-    "lit-html": "0.10.0"
+    "lit-html": "0.10.0",
+    "parcel-bundler": "1.8.1",
+    "style.css": "^1.0.0"
   },
-  "version": "1.0.0"
+  "scripts": {
+    "start": "npm run clean && parcel src/index.html",
+    "build": "npm run clean && parcel build src/index.html",
+    "clean": "rm -rf dist"
+  },
+  "version": "1.0.0",
+  "devDependencies": {
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-runtime": "^6.26.0"
+  }
 }
