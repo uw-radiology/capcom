@@ -4,8 +4,13 @@ import {html, render} from 'lit-html/lib/lit-extended.js';
 
 // A lit-html template uses the `html` template tag:
 let body = () => html`
-  <div>${getImage()}</div>
-  <button on-click= ${(e) =>  drawGrid() } >test</button>
+  <form>
+  	Username:<br>
+  	<input type='text' name='username'><br>
+  	Password:<br>
+  	<input type='password' name='password'><br>
+  </form>
+  <button on-click= ${(e) =>  drawGrid() } >Login</button>
 
 `;
 

@@ -9,7 +9,11 @@ body {
 
 
 /* Grid styling */
-.grid { margin:1em auto; border-collapse:collapse }
+.grid { 
+  margin:1em auto; 
+  border-collapse:collapse;
+  background-position: left top;
+  background-size: cover; }
 .grid td {
     cursor:pointer;
     width:100px; height:100px;
@@ -21,4 +25,25 @@ body {
     background-color:blue;
     opacity: 0.25;
     font-weight:bold; color:white;
+}
+.one {
+  background-image: url("1.jpeg");
+}
+.two {
+  background-image: url("2.jpeg");
+}
+.three {
+  background-image: url("3.jpeg");
+}
+.four {
+  background-image: url("4.jpeg");
+}
+.five {
+  background-image: url("5.jpeg");
+}
+.six {
+  background-image: url("6.jpeg");
+}
+.seven {
+  background-image: url("7.jpeg");
 }

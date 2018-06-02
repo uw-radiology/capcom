@@ -24,11 +24,16 @@ export {
 
 
 
+var images = ["one","two","three","four","five","six","seven"];
 
 function clickableGrid( rows, cols, callback ){
     var i=0;
     var grid = document.createElement('table');
     grid.className = 'grid';
+
+    var index = Math.floor(Math.random()*7);
+
+    grid.classList.add(images[index]);
     for (var r=0;r<rows;++r){
         var tr = grid.appendChild(document.createElement('tr'));
         for (var c=0;c<cols;++c){
@@ -42,3 +47,4 @@ function clickableGrid( rows, cols, callback ){
     }
     return grid;
 }
+
