@@ -23,6 +23,14 @@ function drawGrid() {
 
     form.removeChild(previousGrid); 
   }
+  else{
+    var capcom_message = document.createElement("div");
+    capcom_message.style.textAlign = 'center';
+    capcom_message.appendChild(document.createTextNode("Verify you're a radiologist."));
+    capcom_message.appendChild(document.createElement("br"));
+    capcom_message.appendChild(document.createTextNode("Complete the Cap-Com below, selecting all squares with abnormalities"));
+    form.appendChild(capcom_message);
+  }
 
   var grid = clickableGrid(4,4,function(el,row,col,i){
       //ifnotclicked
@@ -38,13 +46,9 @@ function drawGrid() {
   form.appendChild(grid); 
 }
 
-function show_learning_array(){
-  return learning_arrays;
-}
 
 export {
-  drawGrid,
-  show_learning_array
+  drawGrid
 }
 
 
