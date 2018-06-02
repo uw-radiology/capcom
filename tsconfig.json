@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+      "removeComments": true,
+      "preserveConstEnums": true,
+      "target": "es5",
+      "module": "commonjs",
+      "strict": true,
+      "sourceMap": true
+  },
+  "parcelTsPluginOptions": {
+    // If true type-checking is disabled
+    "transpileOnly": false
+  },
+  "include": [
+      "src/**/*"
+  ],
+  "exclude": [
+      "node_modules",
+      "**/*.spec.ts"
+  ]
+}

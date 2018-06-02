@@ -1,6 +1,7 @@
-var images = ["one","two","three","four","five","six","seven","eight",
-"nine","ten","eleven","twelve","thirteen","fourteen","fifteen","sixteen",
-"seventeen","eighteen","nineteen","twenty"];
+import folder from "img/*";
+
+const images = Object.values(folder);
+
 var learning_arrays = {};
 
 function drawGrid() {
@@ -86,8 +87,10 @@ function clickableGrid( rows, cols, callback ){
     grid.className = 'grid';
 
     var index = Math.floor(Math.random()*images.length);
-    grid.classList.add(images[index]);
+    console.log(images[index]);
     grid.setAttribute("name",images[index]);
+
+    grid.style.backgroundImage = `url(${images[index]})`;
 
     var grid_i=0;
     for (var r=0;r<rows;++r){
