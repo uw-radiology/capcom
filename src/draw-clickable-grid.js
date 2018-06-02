@@ -1,4 +1,6 @@
-var images = ["one","two","three","four","five","six","seven"];
+var images = ["one","two","three","four","five","six","seven","eight",
+"nine","ten","eleven","twelve","thirteen","fourteen","fifteen","sixteen",
+"seventeen","eighteen","nineteen","twenty"];
 var learning_arrays = [];
 
 function drawGrid() {
