@@ -16,7 +16,12 @@ function drawGrid() {
       lastClicked = el;
   });
 
-  document.body.appendChild(grid);
+  grid.id = 'grid';
+  var previousGrid = document.getElementById('grid');
+  if(previousGrid){
+    document.body.removeChild(previousGrid); 
+  }
+  document.body.appendChild(grid); 
 }
 export {
   drawGrid
@@ -31,9 +36,9 @@ function clickableGrid( rows, cols, callback ){
     var grid = document.createElement('table');
     grid.className = 'grid';
 
-    var index = Math.floor(Math.random()*7);
-
+    var index = Math.floor(Math.random()*images.length);
     grid.classList.add(images[index]);
+
     for (var r=0;r<rows;++r){
         var tr = grid.appendChild(document.createElement('tr'));
         for (var c=0;c<cols;++c){
