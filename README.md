@@ -4,9 +4,9 @@
 ![](./img/github_logo.png)[Source Code](https://github.com/uw-radiology/capcom)
 
 Team:
-* Arseny Semin - [University of Wisconsin Radiology](https://radiology.wisc.edu)
-* Dakota Chambers - [University of Wisconsin Radiology](https://radiology.wisc.edu)
-* Steven Beshensky - [ImageMoverMD](https://www.imagemovermd.com/)
+* [Arseny Semin](https://github.com/arsenyosemin) - [University of Wisconsin Radiology](https://radiology.wisc.edu)
+* [Dakota Chambers](https://github.com/dcchambers) - [University of Wisconsin Radiology](https://radiology.wisc.edu)
+* [Steven Beshensky](https://github.com/sbesh91) - [ImageMoverMD](https://www.imagemovermd.com/)
 
 Description:
 
