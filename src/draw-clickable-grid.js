@@ -15,6 +15,9 @@ function drawGrid() {
     clicked.forEach(function(element){
       clicked_array.push(element.id);
     })
+    if(clicked_array===undefined||clicked_array.length == 0){
+      clicked_array = "No Abnomalities";
+    }
     learning_arrays.push(clicked_array);
 
     var output_text = document.createTextNode(clicked_array);
