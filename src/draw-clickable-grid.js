@@ -40,8 +40,13 @@ function drawGrid() {
     if(clicked_array===undefined||clicked_array.length == 0){
       clicked_array = "No Abnomalities";
     }
-    var output_text = document.createTextNode(learning_arrays[previousGrid.getAttribute('name')]);
+    var output_text = document.createTextNode("Array: ".concat(learning_arrays[previousGrid.getAttribute('name')]));
+    output.appendChild(document.createTextNode("Image: ".concat(previousGrid.getAttribute('name'))));
+    output.appendChild(document.createElement("br"));
+    output.appendChild(document.createTextNode("Total: ".concat(learning_arrays[previousGrid.getAttribute('name')]['total'])));
+    output.appendChild(document.createElement("br"));
     output.appendChild(output_text);
+    output.appendChild(document.createElement("br"));
     output.appendChild(document.createElement("br"));
 
     form.removeChild(previousGrid); 
