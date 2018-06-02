@@ -4,7 +4,7 @@ import {html, render} from 'lit-html/lib/lit-extended.js';
 
 // A lit-html template uses the `html` template tag:
 let body = () => html`
-  <form>
+  <form id="form">
   	Username:<br>
   	<input type='text' name='username'><br>
   	Password:<br>

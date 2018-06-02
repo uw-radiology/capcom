@@ -18,10 +18,11 @@ function drawGrid() {
 
   grid.id = 'grid';
   var previousGrid = document.getElementById('grid');
+  var form = document.getElementById('form');
   if(previousGrid){
-    document.body.removeChild(previousGrid); 
+    form.removeChild(previousGrid); 
   }
-  document.body.appendChild(grid); 
+  form.appendChild(grid); 
 }
 export {
   drawGrid
