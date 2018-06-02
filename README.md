@@ -1,6 +1,7 @@
 # capcom
 #SIIMHacks 2018 Hackathon Project - Captcha with DICOM images!
 
+![](./img/github_logo.png)[Source Code](https://github.com/uw-radiology/capcom)
 
 Team:
 * Arseny Semin - [University of Wisconsin Radiology](https://radiology.wisc.edu)
