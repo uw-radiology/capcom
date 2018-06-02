@@ -1,7 +1,7 @@
 var images = ["one","two","three","four","five","six","seven","eight",
 "nine","ten","eleven","twelve","thirteen","fourteen","fifteen","sixteen",
 "seventeen","eighteen","nineteen","twenty"];
-var learning_arrays = [];
+var learning_arrays = {};
 
 function drawGrid() {
 
@@ -10,17 +10,37 @@ function drawGrid() {
   var clicked_array = [];
   var output = document.getElementById('output');
 
+      console.log(learning_arrays);
   if(previousGrid){
     var clicked = previousGrid.querySelectorAll(".clicked");
     clicked.forEach(function(element){
-      clicked_array.push(element.id);
+      clicked_array[element.id]=1;
     })
+    if(learning_arrays[previousGrid.getAttribute('name')]===undefined){
+      learning_arrays[previousGrid.getAttribute('name')]=clicked_array;
+      learning_arrays[previousGrid.getAttribute('name')]['total']=1;
+    }
+    else {
+      clicked.forEach(function(element){
+        var key = element.id;
+        console.log(key);
+        console.log(learning_arrays[previousGrid.getAttribute('name')]);
+          if(learning_arrays[previousGrid.getAttribute('name')][key]>0){
+            learning_arrays[previousGrid.getAttribute('name')][key]++;
+          }
+          else {
+            learning_arrays[previousGrid.getAttribute('name')][key]=1;
+          }
+          console.log(learning_arrays[previousGrid.getAttribute('name')][key]);
+      })
+      learning_arrays[previousGrid.getAttribute('name')]['total']+=1;
+    }
+
+
     if(clicked_array===undefined||clicked_array.length == 0){
       clicked_array = "No Abnomalities";
     }
-    learning_arrays.push(clicked_array);
-
-    var output_text = document.createTextNode(clicked_array);
+    var output_text = document.createTextNode(learning_arrays[previousGrid.getAttribute('name')]);
     output.appendChild(output_text);
     output.appendChild(document.createElement("br"));
 
@@ -62,6 +82,7 @@ function clickableGrid( rows, cols, callback ){
 
     var index = Math.floor(Math.random()*images.length);
     grid.classList.add(images[index]);
+    grid.setAttribute("name",images[index]);
 
     var grid_i=0;
     for (var r=0;r<rows;++r){
